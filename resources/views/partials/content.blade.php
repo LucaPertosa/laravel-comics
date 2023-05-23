@@ -11,7 +11,7 @@
                         <div class="card h-100" style="border:none; background-color: inherit">
                             <img class="card-img-top" style="height:250px" src="{{ $comic['thumb'] }}" alt="">
                             <div class="card-body">
-                                <h6 class="card-title"> {{ $comic['series'] }} </h6>
+                                <h6 class="card-title text-center"> {{ $comic['series'] }} </h6>
                             </div>
                         </div>
 
