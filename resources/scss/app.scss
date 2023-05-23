@@ -3,4 +3,6 @@
 @use "./partials/headerfooterStyle";
 @use "./partials/cta";
 @use "./partials/jumbotron" as *;
+@use "./partials/content" as *;
 @import '~bootstrap/scss/bootstrap';
+
