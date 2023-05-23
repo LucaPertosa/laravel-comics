@@ -2,4 +2,5 @@
 @use "./partials/variables" as *;
 @use "./partials/headerfooterStyle";
 @use "./partials/cta";
+@use "./partials/jumbotron" as *;
 @import '~bootstrap/scss/bootstrap';
