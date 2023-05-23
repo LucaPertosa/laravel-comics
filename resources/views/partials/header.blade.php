@@ -5,34 +5,34 @@
     <nav class="right">
         <ul class="header-nav">
             <li class="">
-                <a href="">CHARACTERS</a>
+                <a href="/characters">CHARACTERS</a>
             </li>
             <li class="">
-                <a href="">COMICS</a>
+                <a href="/">COMICS</a>
             </li>
             <li class="">
-                <a href="">MOVIES</a>
+                <a href="/movies">MOVIES</a>
             </li>
             <li class="">
-                <a href="">TV</a>
+                <a href="/tv">TV</a>
             </li>
             <li class="">
-                <a href="">GAMES</a>
+                <a href="/games">GAMES</a>
             </li>
             <li class="">
-                <a href="">COLLECTABLES</a>
+                <a href="/collectibles">COLLECTIBLES</a>
             </li>
             <li class="">
-                <a href="">VIDEOS</a>
+                <a href="/videos">VIDEOS</a>
             </li>
             <li class="">
-                <a href="">FANS</a>
+                <a href="/fans">FANS</a>
             </li>
             <li class="">
-                <a href="">NEWS</a>
+                <a href="/news">NEWS</a>
             </li>
             <li class="">
-                <a href="">SHOP</a>
+                <a href="/shop">SHOP</a>
             </li>
         </ul>
     </nav>
