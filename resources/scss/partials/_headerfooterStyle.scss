@@ -1,0 +1,158 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+@import '~bootstrap/scss/bootstrap';
+
+header {
+    text-align: center;
+    @include flex(row, space-between, center);
+    margin: 0 auto;
+    width: $width;
+    height: 100px;
+    font-size: .8rem;
+    .left {
+        padding: 10px;
+        img {
+            width: 80px;
+        }
+    }
+    .right {
+        margin: 2rem 0;
+        
+        .header-nav {
+            list-style: none;
+            @include flex(row, center, center);
+            li {
+                margin: 0 .5rem;
+                cursor: pointer;
+                position: relative;
+                a {
+                    color: $text-color;
+                    text-decoration: none;
+                }
+                &.active,
+                &:hover {
+                    color: $primary;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -45px;
+                        left: 50%;
+                        width: 100%;
+                        border-bottom: 4px solid $primary;
+                        transform: translate(-50%, 50%);
+                    }
+                }
+            }
+        }
+    }
+};
+
+footer {
+    height: 500px;
+    z-index: -1;
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    .top {
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        width: $width;
+        .left {
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            .card {
+                width: calc(100% / 3);
+                background-color: inherit;
+                border: none;
+                padding: 0;
+            }
+            h2 {
+                text-transform: uppercase;
+                color: white;
+                font-size: .8rem;
+                margin-top: 1rem;
+            }
+            ul {
+                list-style-type: none;
+                padding-top: .4rem;
+                padding-left: 0;
+                li {
+                    line-height: .9rem;
+                }
+                a {
+                    color: rgba(255, 255, 255, 0.288);
+                    text-decoration: none;
+                    font-size: .7rem;
+                    
+                }
+            }
+            p {
+                color: rgba(255, 255, 255, 0.288);
+                font-size: .7rem;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+        .right {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 60%;
+            img {
+                height: 100%;
+                width: 100%;
+                transform: scale(1.2);
+                display: block;
+                z-index: 0;
+            }
+        }
+    }
+    .bottom {
+        position: relative;
+        background-color: $dark_bg_color;
+        z-index: 10;
+        height: 150px;
+        .container {
+            height: 100%;
+            margin: 0 auto;
+            width: $width;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                color: white;
+                background-color: inherit;
+                border: none;
+                padding: .8rem .6rem;
+                border: 1px solid $primary;
+                cursor: pointer;
+            }
+            ul {
+                display: flex;
+                list-style-type: none;
+                li {
+                    &:first-child {
+                        font-size: .7rem;
+                        font-weight: 600;
+                    }
+                    line-height: 150px;
+                    margin-right: 1rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: $primary;
+                    img {
+                        vertical-align: middle;
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
